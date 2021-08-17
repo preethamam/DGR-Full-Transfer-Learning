@@ -1,8 +1,8 @@
 numpy
-torch
+torch==1.5
 scipy
 matplotlib
 open3d
 tensorboardX
-MinkowskiEngine
+MinkowskiEngine==0.4.3
 easydict

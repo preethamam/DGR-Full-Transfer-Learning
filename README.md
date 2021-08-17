@@ -49,8 +49,10 @@ You can install the MinkowskiEngine and the python requirements on your system w
 ```shell
 # Install MinkowskiEngine
 sudo apt install libopenblas-dev g++-7
-pip install torch
-export CXX=g++-7; pip install -U MinkowskiEngine --install-option="--blas=openblas" -v
+# pip install torch
+# export CXX=g++-7; pip install -U MinkowskiEngine --install-option="--blas=openblas" -v
+pip install torch==1.5
+export CXX=g++-7; pip install -U MinkowskiEngine=0.4.3 -v
 
 # Download and setup DeepGlobalRegistration
 git clone https://github.com/chrischoy/DeepGlobalRegistration.git
