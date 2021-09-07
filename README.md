@@ -1,5 +1,11 @@
 # Deep Global Registration
 
+## Transfer Learning
+1. Place the pre-trained model into the `transfer` directory and rename the model as `checkpoint.pth`.
+2. Edit the `config.json` to match the model. (The default is for `ResUNetBN2C-feat32-3dmatch-v0.05.pth`.)
+3. Export the `FCGF_WEIGHTS` and dataset related environment variable.
+4. Run the transfer learning script correpsonding to the dataset (for example `train_3dmatch_transfer.sh`)
+
 ## Introduction
 This repository contains python scripts for training and testing [Deep Global Registration, CVPR 2020 Oral](https://node1.chrischoy.org/data/publications/dgr/DGR.pdf).
 Deep Global Registration (DGR) proposes a differentiable framework for pairwise registration of real-world 3D scans. DGR consists of the following three modules:

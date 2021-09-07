@@ -19,6 +19,7 @@ bunny.ply
 test.sh
 
 # Additioinal files
+data/
 build/
 dist/
 output.txt
